@@ -1,4 +1,4 @@
-PROJECT_ID=trans-proposal-217500
+PROJECT_ID=$PROJECT_ID
 BUCKET=ecg-data
 
 python preprocess_dataflow.py \

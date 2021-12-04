@@ -7,7 +7,7 @@
 BUCKET=ecg-data
 JOB_NAME="ecg_age_100k_spatiotempo_10dropout_run102"
 JOB_DIR="gs://$BUCKET/keras-models/$JOB_NAME"
-PROJECT=trans-proposal-217500
+PROJECT=$PROJECT_ID
 REGION=us-west1
 
 gcloud ai-platform jobs submit training $JOB_NAME \

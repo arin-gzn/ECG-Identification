@@ -1,4 +1,4 @@
-PROJECT=trans-proposal-217500
+PROJECT=$PROJECT_ID
 REGION=us-west1
 BUCKET=ecg-data
 LABELS_INPUT_FILE=gs://ecg-data/small-data-germany/german-labels.csv
@@ -6,7 +6,7 @@ ECG_DATA_DIR=gs://ecg-data/100k-data/PTBData_Germany/DenData
 OUTPUT=gs://ecg-data/small-data-germany/output
 
 python preprocess_dataflow.py \
-  --service_account=ecg-ml@trans-proposal-217500.iam.gserviceaccount.com \
+  --service_account=$ACCOUNT\
   --region $REGION \
   --runner DataflowRunner \
   --project $PROJECT \
