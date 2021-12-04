@@ -1,0 +1,29 @@
+  "description": "prprocess the 12 ecg files and prepares as the input for keras model",
+  "name": "ECG Preprocess",
+  "parameters": [
+    {
+      "regexes": [
+        "^gs:\\/\\/[^\\n\\r]+$"
+      ],
+      "name": "input_labels_file",
+      "helpText": "csv file path which has the filename and training labels",
+      "label": "labels file path"
+    },
+    {
+      "regexes": [
+        "^gs:\\/\\/[^\\n\\r]+$"
+      ],
+      "name": "input_ecg_data_dir",
+      "helpText": "path to directory where the ecg files for each patient exists",
+      "label": "ecg data dir input"
+    },
+    {
+          "regexes": [
+            "^gs:\\/\\/[^\\n\\r]+$"
+          ],
+          "name": "output",
+          "helpText": "path to output directory where the output eill be storeds",
+          "label": "Output Cloud Storage file(s)"
+        }
+  ]
+}
